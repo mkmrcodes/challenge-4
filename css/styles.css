@@ -1,0 +1,90 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "a a"
+    "b c";
+  margin: 2% 2% 2% 2%;
+}
+
+.community {
+  grid-area: a;
+  padding: 4rem;
+  line-height: 2rem;
+  font-size: 1.7rem;
+}
+.community h1 {
+  color: hsl(179, 62%, 43%);
+}
+.community h2 {
+  color: hsl(71, 73%, 54%);
+}
+.community p {
+  color: hsl(218, 22%, 67%);
+}
+
+.subscription {
+  grid-area: b;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  padding: 4rem;
+}
+.price {
+  font-size: 3rem;
+}
+.middle-container p {
+  letter-spacing: 2px;
+}
+
+.why {
+  grid-area: c;
+  background-color: hsl(179, 65%, 43%);
+  color: hsl(204, 43%, 93%);
+  padding: 4rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+.why p {
+  padding-top: 3%;
+  color: hsl(218, 22%, 85%);
+}
+.sign {
+  background-color: hsl(71, 73%, 54%);
+  width: 90%;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border-radius: 15px;
+  box-shadow: 5px 15px 15px -5px hsl(179, 10%, 43%);
+  font-size: 2rem;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: gray;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+  .community {
+    font-size: 1rem;
+  }
+}
